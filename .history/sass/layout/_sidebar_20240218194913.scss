@@ -1,0 +1,29 @@
+@use "../abstracts/" as abst;
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	margin: 48px 30px;
+	gap: 44px;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	&-item {
+		margin: 8px 30px 8px 20px;
+		list-style: none;
+		gap: 6px;
+	}
+	&-link {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		padding: 8px 30px 8px 20px;
+	}
+	&-text {
+		color: abst.$text-gray;
+	}
+	&-item:hover {
+		background-color: hsla(248, 58%, 76%, 1);
+	}
+}

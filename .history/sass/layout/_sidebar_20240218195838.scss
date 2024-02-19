@@ -1,0 +1,26 @@
+@use "../abstracts/" as abst;
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	margin: 48px 30px;
+	gap: 44px;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	&-item {
+		list-style: none;
+		gap: 6px;
+	}
+	&-link {
+		display: flex;
+		gap: 10px;
+		color: abst.$text-gray;
+		align-items: center;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 142%;
+		// padding: 8px 30px 8px 20px;
+	}
+}

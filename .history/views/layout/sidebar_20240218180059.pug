@@ -1,0 +1,16 @@
+aside.sidebar
+  a.logo(href="./") 
+    img(srcSet="./images/logo.png 2x", alt="GOCAST")
+  ul.menu 
+    each item in ["Home","Trending","Explore Topics","Playlist","Subscriptions"]
+      li.menu-item 
+        a.menu-link(href="./") 
+          img.menu-icon(src="./images/icons/home-icon.png", alt=item)
+          span.menu-text=item
+  ul.menu 
+    each item in ["Home","Trending","Explore Topics","Playlist","Subscriptions"]
+      li.menu-item 
+        a.menu-link(href="./") 
+          img.menu-icon(src="./images/icons/home-icon.png", alt=item)
+          span.menu-text=item
+          

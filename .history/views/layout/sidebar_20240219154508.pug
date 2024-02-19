@@ -1,0 +1,18 @@
+aside.sidebar
+  a.logo(href="./") 
+    img(srcSet="./images/logo.png 2x", alt="GOCAST")
+  ul.menu 
+    each item in ["Home","Trending","Explore Topics","Playlist","Subscriptions"]
+      +menuItem(item)
+  ul.menu 
+    h3.menu-heading Podcasters
+    each item in ["Dashboard","Episodes","Team","Subscribers"]
+      +menuItem(item)
+  ul.menu 
+    h3.menu-heading Community
+    each item in ["Leaderboard"]
+      li.menu-item 
+        a.menu-link(href="./") 
+          img.menu-icon(src="./images/icons/leaderboard-icon.png", alt=item)
+          span.menu-text=item
+          

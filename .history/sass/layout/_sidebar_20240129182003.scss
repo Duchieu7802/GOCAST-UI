@@ -1,0 +1,11 @@
+.sidebar {
+	padding: 48px 30px;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	&-item {
+		padding: 8px 30px 8px 20px;
+	}
+}
