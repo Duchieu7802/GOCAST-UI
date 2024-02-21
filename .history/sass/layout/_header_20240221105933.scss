@@ -9,20 +9,9 @@
 		display: flex;
 		align-items: center;
 		gap: 24px;
-		& > * {
-			flex-shrink: 0;
-		}
 	}
 	&-action {
 		padding: 12px;
-	}
-}
-.profile {
-	display: block;
-	@include abst.size(48px);
-	img {
-		@include abst.imgCover();
-		border-radius: 100rem;
 	}
 }
 .search {
@@ -46,14 +35,5 @@
 }
 .button-upload {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	gap: 6px;
-	border-radius: 8px;
-	@include abst.bg(abst.$primary-color);
-	padding: 12px 16px;
-	color: abst.$white-neutral;
-	font-size: 15px;
-	font-weight: 600;
-	line-height: 147%;
 }

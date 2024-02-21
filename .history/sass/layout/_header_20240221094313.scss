@@ -1,0 +1,13 @@
+@use "../abstracts/" as abst;
+.topbar {
+	padding: 24px 56px;
+	background-color: abst.$bg-color;
+	display: flex;
+	justify-content: space-between;
+}
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}

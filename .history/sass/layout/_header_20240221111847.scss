@@ -20,10 +20,7 @@
 .profile {
 	display: block;
 	@include abst.size(48px);
-	img {
-		@include abst.imgCover();
-		border-radius: 100rem;
-	}
+	@include abst.imgCover();
 }
 .search {
 	display: flex;

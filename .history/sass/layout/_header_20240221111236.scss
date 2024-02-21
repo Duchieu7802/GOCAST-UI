@@ -17,14 +17,6 @@
 		padding: 12px;
 	}
 }
-.profile {
-	display: block;
-	@include abst.size(48px);
-	img {
-		@include abst.imgCover();
-		border-radius: 100rem;
-	}
-}
 .search {
 	display: flex;
 	justify-content: center;

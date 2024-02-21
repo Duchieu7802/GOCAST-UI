@@ -1,0 +1,25 @@
+@use "../abstracts/" as abst;
+.topbar {
+	padding: 24px 56px;
+	background-color: abst.$bg-color;
+	display: flex;
+	justify-content: space-between;
+	flex-shrink: 0;
+}
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	padding: 12px 20px;
+	border-radius: 12px;
+	color: abst.$gray2;
+	@include abst.bg(abst.$gray-natural2);
+	&-input {
+		font-size: 15px;
+		border: none;
+		font-weight: 500;
+		line-height: 147%;
+		caret-color: abst.$primary-color;
+	}
+}

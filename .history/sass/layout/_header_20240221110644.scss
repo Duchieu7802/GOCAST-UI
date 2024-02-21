@@ -9,20 +9,9 @@
 		display: flex;
 		align-items: center;
 		gap: 24px;
-		& > * {
-			flex-shrink: 0;
-		}
 	}
 	&-action {
 		padding: 12px;
-	}
-}
-.profile {
-	display: block;
-	@include abst.size(48px);
-	img {
-		@include abst.imgCover();
-		border-radius: 100rem;
 	}
 }
 .search {
