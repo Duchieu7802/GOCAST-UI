@@ -1,0 +1,56 @@
+.host {
+  padding-bottom: 28px;
+}
+.host-heading {
+  font-weight: 600;
+  font-size: 16px;
+  color: hsl(220, 10%, 12%);
+  margin-bottom: 20px;
+}
+.host-list {
+  --gap-list: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap-list);
+}
+.host-item {
+  --gap: 6px;
+  --avatar-size: 45px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap);
+}
+@media screen and (min-width: 768px) {
+  .host-item {
+    --gap: 7px;
+    --avatar-size: 64px;
+  }
+}
+.host-name {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(216, 3%, 38%);
+}
+.host-avatar {
+  display: flex;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 100rem;
+  overflow: hidden;
+  align-items: flex-end;
+  justify-content: center;
+  object-fit: cover;
+  background-color: var(--color);
+  box-shadow: 0 0 0 2px white, 0 0 0 3px hsl(341, 100%, 84%);
+  position: relative;
+}
+
+.home-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 60px;
+}
+
+/*# sourceMappingURL=home.css.map */

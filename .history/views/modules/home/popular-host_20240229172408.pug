@@ -1,0 +1,8 @@
+.host   
+  h2.host-heading Popular Hosts
+  ul.host-list 
+    each value in [{name:"Thomas",color:"hsla(14, 100%, 82%, 1)"},{name:"Darrell",color:"hsla(14, 100%, 82%, 1)"},{name:"Arlene",color:"hsla(14, 100%, 82%, 1)"},{name:"Kristin",color:"hsla(14, 100%, 82%, 1)"},{name:"Courtney",color:"hsla(14, 100%, 82%, 1)"},{name:"Cody",color:"hsla(14, 100%, 82%, 1)"},{name:"Arlene",color:"hsla(14, 100%, 82%, 1)"}]
+      li.host-item
+        .host-avatar(style=`--color:${value.color}`)
+          img(src="./images/host-user.png ", alt="User")
+        span.host-name=value.name

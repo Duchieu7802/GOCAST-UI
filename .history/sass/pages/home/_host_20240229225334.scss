@@ -1,0 +1,45 @@
+@use "../../abstracts/" as abst;
+.host {
+	&-heading {
+		font-weight: 600;
+		font-size: 16px;
+		color: abst.$text-black1;
+		margin-bottom: 20px;
+	}
+	&-list {
+		--gap-list: 12px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: var(--gap-list);
+	}
+	&-item {
+		--gap: 6px;
+		--avatar-size: 45px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: var(--gap);
+		@include abst.screenMW(768px) {
+			--gap: 7px;
+			--avatar-size: 64px;
+		}
+	}
+	&-name {
+		font-size: 14px;
+		font-weight: 400;
+		color: abst.$gray1;
+	}
+	&-avatar {
+		display: flex;
+		@include abst.size(var(--avatar-size));
+		border-radius: 100rem;
+		overflow: hidden;
+		align-items: flex-end;
+		justify-content: center;
+		object-fit: cover;
+		background-color: var(--color);
+		box-shadow: 0 0 0 2px white, 0 0 0 3px hsla(341, 100%, 84%, 1);
+		position: relative;
+	}
+}

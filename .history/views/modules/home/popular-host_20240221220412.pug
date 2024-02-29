@@ -1,0 +1,8 @@
+.host   
+  h2.host-heading Popular Hosts
+  ul.host-list 
+    each item in [Thomas,Darrell,Arlene,Kristin,Courtney,Cody,Arlene]
+      li.host-item
+        .host-avatar
+          img(src="./images/host-user.png", alt="User")
+        span.host-name=item

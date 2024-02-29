@@ -64,12 +64,15 @@ body {
   min-height: 100vh;
 }
 
+.main-cointainer {
+  padding: 37px 56px;
+}
+
 .topbar {
   padding: 24px 56px;
   background-color: hsl(0, 100%, 100%);
   display: flex;
   justify-content: space-between;
-  flex-shrink: 0;
 }
 .topbar-right {
   display: flex;
@@ -104,6 +107,7 @@ body {
   padding: 12px 20px;
   border-radius: 12px;
   color: hsl(235, 7%, 67%);
+  margin: 12px 0;
   background-color: hsl(208, 26%, 95%);
 }
 .search-input {
