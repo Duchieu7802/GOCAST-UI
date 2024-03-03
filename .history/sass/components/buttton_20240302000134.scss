@@ -1,0 +1,9 @@
+.button {
+	--gap: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: var(--gap);
+	border-radius: 8px;
+	font-size: 15px;
+}

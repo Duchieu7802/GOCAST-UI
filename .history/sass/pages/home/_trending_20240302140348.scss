@@ -1,0 +1,67 @@
+@use "../../abstracts/" as abst;
+.trending {
+	margin-top: 20px;
+	&-heading {
+		--mb: 11px;
+		color: abst.$text-black1;
+	}
+	&-banner {
+		padding: 20px;
+		border-radius: 10px;
+		background-color: abst.$white-natural;
+		display: flex;
+		align-items: flex-start;
+		position: relative;
+	}
+	&-content {
+		flex: 0 0 310px;
+	}
+	&-tittle {
+		color: abst.$text-black1;
+		font-size: 22px;
+		font-weight: 600;
+		line-height: var(32/22 * 100);
+		margin-bottom: 11px;
+		& span {
+			background: var(
+				--Gradient,
+				linear-gradient(92deg, #415ef4 0.33%, #7141ef 28.14%)
+			);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+	&-podcast {
+		color: abst.$natural;
+		margin-bottom: 4px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 142%;
+	}
+	&-author {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 142%;
+		color: abst.$primary-black;
+		margin-bottom: 20px;
+		&-position {
+			color: abst.$natural;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 142%;
+		}
+	}
+	&-image {
+		position: absolute;
+		right: 15px;
+		max-width: 332px;
+		bottom: 0;
+	}
+}
+.button--primary {
+	--padding: 8px 14px;
+	& img {
+		@include abst.size(24px);
+	}
+}

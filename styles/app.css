@@ -55,6 +55,32 @@ body {
   font-weight: 400;
 }
 
+.heading {
+  --mb: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  color: hsl(220, 10%, 12%);
+  margin-bottom: var(--mb);
+}
+
+.button {
+  --padding: 12px 16px;
+  --gap: 8px;
+  --fw: 600px;
+  font-weight: var(--fw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+  padding: var(--padding);
+  border-radius: 8px;
+  font-size: 15px;
+}
+.button--primary {
+  color: hsl(0, 0%, 99%);
+  background-color: hsl(248, 57%, 60%);
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -68,6 +94,14 @@ body {
   padding: 37px 56px;
 }
 
+@media screen and (max-width: 1279.98px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .main-cointainer {
+    padding: 24px;
+  }
+}
 .topbar {
   padding: 24px 56px;
   background-color: hsl(0, 100%, 100%);
@@ -81,9 +115,6 @@ body {
 }
 .topbar-right > * {
   flex-shrink: 0;
-}
-.topbar-action {
-  padding: 12px;
 }
 
 .profile {
@@ -123,10 +154,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
+  --gap: 6px;
   border-radius: 8px;
   background-color: hsl(248, 57%, 60%);
-  padding: 12px 16px;
+  --padding: 12px 16px;
   color: hsl(0, 0%, 99%);
   font-size: 15px;
   font-weight: 600;
@@ -137,6 +168,11 @@ body {
   background-color: white;
   padding: 48px 30px;
   border-right: 1px solid hsl(208, 26%, 95%);
+}
+@media screen and (max-width: 1279.98px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 .logo {

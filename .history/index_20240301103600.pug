@@ -1,0 +1,9 @@
+extends ./views/layout/dashboard
+append stylesheet 
+  link(rel="stylesheet", href="./styles/home.css")
+block main 
+  .home-wrapper  
+    .home-left  
+      include ./views/modules/home/popular-host
+      include ./views/modules/home/treding.pug
+    .home-right

@@ -2,10 +2,7 @@
   padding-bottom: 28px;
 }
 .host-heading {
-  font-weight: 600;
-  font-size: 16px;
-  color: hsl(220, 10%, 12%);
-  margin-bottom: 20px;
+  --mb: 20px;
 }
 .host-list {
   --gap-list: 12px;
@@ -45,6 +42,98 @@
   background-color: var(--color);
   box-shadow: 0 0 0 2px white, 0 0 0 3px hsl(341, 100%, 84%);
   position: relative;
+}
+
+.trending {
+  padding-top: 20px;
+  container-type: inline-size;
+  container-name: trending;
+}
+.trending-heading {
+  --mb: 11px;
+  color: hsl(220, 10%, 12%);
+}
+.trending-banner {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 97%);
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.trending-content {
+  flex: 0 0 310px;
+}
+.trending-tittle {
+  color: hsl(220, 10%, 12%);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 145.4545454545%;
+  margin-bottom: 11px;
+}
+.trending-tittle span {
+  background: var(--Gradient, linear-gradient(92deg, #415ef4 0.33%, #7141ef 28.14%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.trending-podcast {
+  color: hsl(218, 4%, 42%);
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 142%;
+}
+.trending-author {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 142%;
+  color: hsl(240, 19%, 17%);
+  margin-bottom: 20px;
+}
+.trending-author-position {
+  color: hsl(218, 4%, 42%);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 142%;
+}
+.trending-image {
+  position: absolute;
+  right: 15px;
+  max-width: 332px;
+  bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .trending-circle {
+    right: 15px;
+  }
+}
+@container trending (max-width:600px) {
+  .trending-image {
+    display: none;
+  }
+  .trending-content {
+    flex: 1;
+  }
+}
+.trending-circle, .trending-vector {
+  position: absolute;
+}
+.trending-vector {
+  right: 5%;
+  top: 5%;
+}
+.trending-circle {
+  right: 10%;
+  bottom: 10%;
+}
+
+.button--primary {
+  --padding: 8px 14px;
+}
+.button--primary img {
+  width: 24px;
+  height: 24px;
 }
 
 .home-wrapper {
