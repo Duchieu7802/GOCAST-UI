@@ -1,0 +1,15 @@
+mixin menuItem(text,icon)
+  li.menu-item 
+    a.menu-link(href="#") 
+      img.menu-icon(src=`./images/icons/${icon}-icon.png`, alt=text)
+      span.menu-text=text
+mixin toggle()
+  label.toggle
+    input(type="checkbox") 
+    .toggle-main
+      .toggle-spinner 
+mixin feedItem()
+  .feed-item
+    .feed-item-header 
+    .feed-item-content 
+    .feed-item.footer

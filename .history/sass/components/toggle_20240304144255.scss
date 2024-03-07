@@ -1,0 +1,9 @@
+@use "../abstracts/" as abst;
+.toggle {
+	@include abst.size(30px, 17px);
+	@include abst.rounded("rounded-full");
+	@include abst.bg(abst.$gray2);
+	padding: 1.5px 2px;
+	&-spinner {
+	}
+}

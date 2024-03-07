@@ -1,0 +1,48 @@
+@use "../../abstracts/" as abst;
+.feed {
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		container-type: inline-size;
+		container-name: feed-toggle;
+	}
+	&-tab {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		white-space: nowrap;
+		&-item {
+			cursor: pointer;
+			--padding: 10px;
+			padding: var(--padding);
+			font-weight: 500;
+			font-size: 14px;
+			border-bottom: 1px solid abst.$gray3;
+			border-bottom-color: currentColor;
+			& a {
+				color: abst.$gray1;
+			}
+		}
+		&-item.is-active a {
+			color: abst.$primary-color;
+			font-weight: 600;
+		}
+	}
+
+	&-toggle {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-weight: 500;
+		color: abst.$gray1;
+		font-size: 14px;
+	}
+	@container feed-toggle (max-width:470px) {
+		&-toggle p {
+			display: none;
+		}
+	}
+	&-item {
+	}
+}

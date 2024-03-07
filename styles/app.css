@@ -53,12 +53,23 @@ body {
   font-family: "IBM Plex Sans", sans-Serif;
   color: hsl(220, 10%, 12%);
   font-weight: 400;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
 }
 
 .heading {
   --mb: 0px;
   font-weight: 600;
   font-size: 16px;
+  line-height: 1.5;
   color: hsl(220, 10%, 12%);
   margin-bottom: var(--mb);
 }
@@ -79,6 +90,31 @@ body {
 .button--primary {
   color: hsl(0, 0%, 99%);
   background-color: hsl(248, 57%, 60%);
+}
+
+.toggle-main {
+  width: 30px;
+  height: 17px;
+  border-radius: 100rem;
+  background-color: hsl(235, 7%, 67%);
+  padding: 2px;
+  cursor: pointer;
+}
+.toggle input {
+  display: none;
+}
+.toggle input:checked + .toggle-main .toggle-spinner {
+  transform: translateX(12px);
+}
+.toggle input:checked + .toggle-main {
+  background-image: linear-gradient(92.29deg, #415ef4 0.33%, #7141ef 28.14%);
+}
+.toggle-spinner {
+  border-radius: 100rem;
+  background-color: white;
+  width: 13px;
+  aspect-ratio: 1;
+  transition: all 0.25s linear;
 }
 
 .wrapper {

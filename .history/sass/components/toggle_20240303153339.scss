@@ -1,0 +1,6 @@
+@use "../abstracts/" as abst;
+.toggle {
+	&-spinner {
+		@include size(30px, 17px);
+	}
+}

@@ -1,0 +1,23 @@
+@use "../abstracts/" as abst;
+.toggle {
+	@include abst.size(30px, 17px);
+	@include abst.rounded("rounded-full");
+	@include abst.bg(abst.$gray2);
+	padding: 2px;
+	cursor: pointer;
+	background-image: abst.$gradient;
+	& input {
+		display: none;
+		&:checked + .toggle-spinner {
+			transform: translateX(12px);
+		}
+	}
+	&-spinner {
+		@include abst.rounded("rounded-full");
+		background-color: white;
+		width: 13px;
+		aspect-ratio: 1;
+		// transform: translateX(12px);
+		transition: all 0.25s linear;
+	}
+}

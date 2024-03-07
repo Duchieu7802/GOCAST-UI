@@ -1,0 +1,5 @@
+.toggle {
+	&-spinner {
+		@include size(30px, 17px);
+	}
+}

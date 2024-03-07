@@ -1,0 +1,14 @@
+@use "../abstracts/" as abst;
+.toggle {
+	@include abst.size(30px, 17px);
+	@include abst.rounded("rounded-full");
+	@include abst.bg(abst.$gray2);
+	padding: 1.5px 2px;
+	&-spinner {
+		@include abst.rounded("rounded-full");
+		background-color: white;
+		width: 14px;
+		height: 14px;
+		// aspect-ratio: 1;
+	}
+}

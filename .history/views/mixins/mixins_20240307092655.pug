@@ -1,0 +1,31 @@
+mixin menuItem(text,icon)
+  li.menu-item 
+    a.menu-link(href="#") 
+      img.menu-icon(src=`./images/icons/${icon}-icon.png`, alt=text)
+      span.menu-text=text
+mixin toggle()
+  label.toggle
+    input(type="checkbox") 
+    .toggle-main
+      .toggle-spinner 
+mixin feedItem()
+  .feed-item
+    .feed-item-header
+      .feed-author
+        .feed-author-avatar 
+          img(src="./images/icons/profile-icon.png", alt="Profile")
+          span.feed-author-verify 
+            include ../icons/icon-verify
+        .feed-author-content  
+          .feed-author-header
+            h4.feed-author-name James Killened 
+            .feed-author-rating 
+              span rated an episude
+              img(src="./images/icons/rating-icon.png", alt="Rating")
+          .feed-date Jun 25th
+      span 
+        include ../icons/icon-more
+    .feed-item-main 
+      .feed-image 
+        img(src="", alt="")
+    .feed-item.footer

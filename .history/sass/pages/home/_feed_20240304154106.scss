@@ -1,0 +1,11 @@
+.feed {
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-toggle {
+		display: flex;
+		align-items: center;
+	}
+}

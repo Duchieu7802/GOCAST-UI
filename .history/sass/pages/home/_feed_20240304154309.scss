@@ -1,0 +1,21 @@
+.feed {
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-tab {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&-tab {
+			--padding: 10px;
+			padding: var(--padding);
+		}
+	}
+	&-toggle {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+}
