@@ -1,0 +1,5 @@
+.widget.widget-topic
+  +widgetHeader("Listening history")
+  .listen-list
+    each val in [{username:"Don't Always Win | LifeSpring"},{username:"Keep Moving. Don't Look Back!"},{username:"Don't Always Win | LifeSpring"}]
+      +listenItem(val.username) 

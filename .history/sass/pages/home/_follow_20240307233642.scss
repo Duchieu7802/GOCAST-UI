@@ -1,0 +1,24 @@
+.follow {
+	&-list {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		gap: 20px;
+		&-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&-user {
+				display: flex;
+				align-items: center;
+				gap: 11px;
+			}
+			&-avatar {
+				img {
+					@include size(49px);
+					aspect-ratio: 1;
+				}
+			}
+		}
+	}
+}

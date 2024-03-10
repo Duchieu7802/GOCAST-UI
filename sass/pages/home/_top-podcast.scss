@@ -1,0 +1,14 @@
+@use "../../abstracts/" as abst;
+.top-podcast {
+	&-images {
+		gap: 12px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		img {
+			@include abst.imgCover();
+			// @include abst.size(74px);
+			aspect-ratio: 1;
+			border-radius: 10px;
+		}
+	}
+}

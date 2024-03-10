@@ -1,0 +1,11 @@
+extends ./views/layout/dashboard
+append stylesheet 
+  link(rel="stylesheet", href="./styles/home.css")
+block main 
+  .home-wrapper  
+    .home-left  
+      include ./views/modules/home/popular-host
+      include ./views/modules/home/trending
+      include ./views/modules/home/feed
+    .home-right
+      include ./views/modules/home/top-podcast

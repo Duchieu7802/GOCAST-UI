@@ -1,0 +1,69 @@
+mixin menuItem(text,icon)
+  li.menu-item 
+    a.menu-link(href="#") 
+      img.menu-icon(src=`./images/icons/${icon}-icon.png`, alt=text)
+      span.menu-text=text
+mixin toggle()
+  label.toggle
+    input(type="checkbox") 
+    .toggle-main
+      .toggle-spinner 
+mixin button(icon=false,title="Play Episode")
+  button.button.button--primary
+    if icon 
+      img(srcSet="./images/icons/play-icon.png 2x", alt="play")   
+    span= title
+mixin feedItem()
+  .feed-item
+    .feed-item-header
+      .feed-author
+        .feed-author-avatar 
+          img(src="./images/icons/profile-icon.png", alt="Profile")
+          span.feed-author-verify 
+            include ../icons/icon-verify
+        .feed-author-content  
+          .feed-author-header
+            h4.feed-author-name James Killened 
+            .feed-author-rating 
+              span rated an episude
+              img(src="./images/icons/rating-icon.png", alt="Rating")
+          .feed-date Jun 25th
+      span 
+        include ../icons/icon-more
+    .feed-item-main 
+      .feed-item-image 
+        img(src="./images/icons/device-icon.png", alt="Device")
+      .feed-item-content
+        p.feed-item-podcast Perspective Podcast (Ep. 1)
+        h3.feed-item-heading Philosophy vs Religion vs Science: Yahia Amin and Sadman Sadik
+        .feed-item-time 
+          .feed-item-timer
+            include ../icons/icon-time 
+              .feed-date 11 dayes ago
+          .feed-item-timer
+            include ../icons/icon-timer
+            .feed-date 45mins 10 Sec        
+        .feed-item-desc Play Philosophy vs Religion vs Science: Perspective Podcast (Ep. 1) | Yahia Amin and Sadman Sadik by PERSPECTIVE with Yahia Amin on desktop and mobile. Play over 265 million tracks for... 
+        .feed-item-share 
+          include ../icons/icon-share     
+    .feed-item-footer
+      .feed-item-action 
+        button
+          include ../icons/icon-heart
+        button
+          include ../icons/icon-star
+        button
+          include ../icons/icon-playlist
+      +button(true)
+mixin widgetHeader(title="",url ="#")
+  .widget-header    
+    h3.widget-heading=title
+    a.widget-view-all(href=url) View All 
+mixin followItem(name="",desc="")
+  .follow-list
+    .follow-item
+      .follow-item-user   
+        .follow-item-avatar 
+          img(src="./images/user-avatar.png", alt="User")
+        .follow-item-info 
+

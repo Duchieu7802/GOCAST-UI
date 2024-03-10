@@ -1,0 +1,47 @@
+@use "../../abstracts/" as abst;
+.listen {
+	&-list {
+		display: flex;
+		align-items: center;
+		gap: 18px;
+		flex-direction: column;
+	}
+	&-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&-user {
+			display: flex;
+			align-items: center;
+			gap: 11px;
+		}
+		&-avatar {
+			flex: 0 0 109px;
+			height: 67px;
+			@include abst.rounded("rounded-xl");
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: inherit;
+			}
+		}
+		&-username {
+			font-size: 15px;
+			font-weight: 500;
+			line-height: 1.5;
+		}
+		&-action {
+			display: flex;
+
+			align-items: center;
+			gap: 16px;
+		}
+		&-meta {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 6px;
+		}
+	}
+}
