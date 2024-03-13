@@ -297,11 +297,6 @@ h6 {
   color: white;
 }
 
-@media screen and (min-width: 1280px) {
-  .navigation {
-    display: none;
-  }
-}
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -313,6 +308,12 @@ h6 {
   right: 0;
   left: 0;
   background-color: #fff;
+}
+
+@media screen and (min-width: 1280px) {
+  .navigation {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
