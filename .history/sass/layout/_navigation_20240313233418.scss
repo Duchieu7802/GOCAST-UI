@@ -1,0 +1,13 @@
+@use "../abstracts/" as abst;
+@media screen and (min-width: 1280px) {
+	.navigation {
+		display: none;
+	}
+}
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 14px 24px;
+	position: fixed;
+}

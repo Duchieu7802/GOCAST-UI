@@ -145,10 +145,13 @@ h6 {
   display: grid;
   grid-template-columns: 256px minmax(0, 1fr);
   min-height: 100vh;
+  padding-bottom: 80px;
 }
 
 .main-cointainer {
   padding: 37px 56px;
+  container-type: inline-size;
+  container-name: mainContainer;
 }
 
 @media screen and (max-width: 1279.98px) {
@@ -156,14 +159,18 @@ h6 {
     grid-template-columns: 1fr;
   }
   .main-cointainer {
-    padding: 24px;
+    padding: 0 24px;
   }
 }
 .topbar {
   padding: 24px 56px;
   background-color: hsl(0, 100%, 100%);
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.topbar-logo {
+  flex-shrink: 0;
 }
 .topbar-right {
   display: flex;
@@ -221,6 +228,16 @@ h6 {
   line-height: 147%;
 }
 
+@media screen and (max-width: 1279.98px) {
+  .topbar {
+    padding: 20px 24px;
+  }
+  .button-upload,
+  .topbar-action,
+  .search {
+    display: none;
+  }
+}
 .sidebar {
   background-color: white;
   padding: 48px 30px;
@@ -228,7 +245,14 @@ h6 {
 }
 @media screen and (max-width: 1279.98px) {
   .sidebar {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    bottom: 0;
+    transition: transform 0.25s linear;
+    transform: translateX(-100%);
+    z-index: 9;
   }
 }
 
@@ -271,6 +295,24 @@ h6 {
 .menu-link:hover {
   background: linear-gradient(92deg, #415ef4 0.33%, #7141ef 28.14%);
   color: white;
+}
+
+@media screen and (min-width: 1280px) {
+  .navigation {
+    display: none;
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  position: fixed;
+  z-index: 9;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */

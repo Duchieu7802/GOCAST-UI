@@ -1,0 +1,51 @@
+@use "../../abstracts/" as abst;
+.host {
+	padding-bottom: 28px;
+	&-heading {
+		--mb: 20px;
+	}
+	&-list {
+		--gap-list: 12px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: var(--gap-list);
+	}
+	&-item {
+		--gap: 6px;
+		--avatar-size: 45px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: var(--gap);
+		@include abst.screenMinWidth(768px) {
+			--gap: 7px;
+			--avatar-size: 64px;
+		}
+	}
+	&-name {
+		font-size: 14px;
+		font-weight: 400;
+		color: abst.$gray1;
+	}
+	// @container mainContainer (max-width: 420px) {
+		&-list {
+			display: grid;
+			grid-auto-columns: 55px;
+			grid-auto-flow: columns;
+			overflow-x: auto;
+		}
+	}
+	&-avatar {
+		display: flex;
+		@include abst.size(var(--avatar-size));
+		border-radius: 100rem;
+		overflow: hidden;
+		align-items: flex-end;
+		justify-content: center;
+		object-fit: cover;
+		background-color: var(--color);
+		box-shadow: 0 0 0 2px white, 0 0 0 3px hsla(341, 100%, 84%, 1);
+		position: relative;
+	}
+}

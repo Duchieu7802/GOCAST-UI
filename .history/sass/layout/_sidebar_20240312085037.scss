@@ -1,0 +1,54 @@
+@use "../abstracts/" as abst;
+.sidebar {
+	@include abst.bg(white);
+	padding: 48px 30px;
+	border-right: 1px solid abst.$gray-natural2;
+	@include abst.screenMaxWidth(1279.98px) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 300px;
+		bottom: 0;
+		// transition: transform 0.25s linear;
+		// transform: translateX(-100%);
+	}
+}
+.logo {
+	display: block;
+	margin-bottom: 44px;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	--gap: 26px;
+	&:not(:last-child):after {
+		content: "";
+		display: block;
+		height: 1px;
+		background-color: abst.$graye9;
+		margin-block: var(--gap);
+	}
+	&-heading {
+		margin-bottom: 10px;
+		padding-left: 20px;
+		color: abst.$text-gray;
+		font-size: 13px;
+		line-height: 146%;
+	}
+	&-link {
+		display: flex;
+		gap: 10px;
+		color: abst.$text-gray;
+		align-items: center;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 142%;
+		padding: 8px 30px 8px 20px;
+		border-radius: 12px;
+		&:hover {
+			background: linear-gradient(92deg, #415ef4 0.33%, #7141ef 28.14%);
+			color: white;
+		}
+	}
+}

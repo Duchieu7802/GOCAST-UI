@@ -1,0 +1,10 @@
+@use "../abstracts/" as abst;
+.navigation {
+	@container mainContainer (max-width: 810px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 27px;
+		padding: 14px 24px;
+	}
+}

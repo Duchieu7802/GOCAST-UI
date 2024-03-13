@@ -1,0 +1,14 @@
+@forward "./host";
+@forward "./trending";
+@forward "./feed";
+@forward "./top-podcast";
+@forward "./follow";
+@forward "./listening";
+@forward "./topics";
+@container mainContainer(min-width:1000px) {
+}
+.home-wrapper {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+	gap: 60px;
+}
