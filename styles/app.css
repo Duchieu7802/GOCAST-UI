@@ -54,6 +54,9 @@ body {
   color: hsl(220, 10%, 12%);
   font-weight: 400;
   font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -235,6 +238,11 @@ h6 {
   .button-upload,
   .topbar-action,
   .search {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .topbar-logo {
     display: none;
   }
 }
